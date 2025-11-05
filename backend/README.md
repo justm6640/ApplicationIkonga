@@ -18,6 +18,23 @@ npm run dev
 
 L'API se lance sur `http://localhost:4000` et expose une route de santé (`/health`).
 
+### 👀 Prévisualiser rapidement les modules
+
+Une fois le serveur en route, vous pouvez consulter les premiers jeux de données de démonstration :
+
+```bash
+# Vérifier que le serveur répond
+curl http://localhost:4000/health
+
+# Explorer les menus nutritionnels simulés
+curl http://localhost:4000/nutrition/menus | jq
+
+# Découvrir le module fitness
+curl http://localhost:4000/fitness/workouts | jq
+```
+
+> 💡 Astuce : si vous utilisez VS Code ou un IDE compatible, ouvrez le fichier [`preview.http`](./preview.http) pour exécuter les requêtes de test prédéfinies et visualiser les réponses au sein de l'éditeur.
+
 ## ✅ Tests
 
 ```bash
