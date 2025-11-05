@@ -1,0 +1,27 @@
+### Vérification de l'état du serveur
+GET http://localhost:4000/health
+Accept: application/json
+
+### Menus nutritionnels
+GET http://localhost:4000/nutrition/menus
+Accept: application/json
+
+### Recettes détaillées
+GET http://localhost:4000/nutrition/recipes
+Accept: application/json
+
+### Séances de fitness
+GET http://localhost:4000/fitness/workouts
+Accept: application/json
+
+### Méditations bien-être
+GET http://localhost:4000/wellness/meditations
+Accept: application/json
+
+### Messages coach-abonné
+GET http://localhost:4000/coaching/messages
+Accept: application/json
+
+### Publications communauté
+GET http://localhost:4000/community/posts
+Accept: application/json
